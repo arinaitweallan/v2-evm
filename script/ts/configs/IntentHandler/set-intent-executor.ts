@@ -9,7 +9,7 @@ async function main(chainId: number) {
   const deployer = signers.deployer(chainId);
   const ownerWrapper = new OwnerWrapper(chainId, deployer);
 
-  const intentExecutor = "0x7FDD623c90a0097465170EdD352Be27A9f3ad817";
+  const intentExecutor = "0xd7BfD4F9de8016C0A28FD1AA8A3AcbA460563492";
   const isAllow = true;
 
   const intentHandler = IntentHandler__factory.connect(config.handlers.intent, deployer);

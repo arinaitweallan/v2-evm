@@ -1,31 +1,35 @@
-import { HardhatRuntimeEnvironment } from "hardhat/types";
-import { DeployFunction } from "hardhat-deploy/types";
-import { ethers } from "hardhat";
-import { EvmPriceServiceConnection } from "@pythnetwork/pyth-evm-js";
-import {
-  CrossMarginHandler__factory,
-  IPyth__factory,
-  LimitTradeHandler__factory,
-  MockPyth__factory,
-  PythAdapter__factory,
-} from "../../../../typechain";
-import { getConfig } from "../../utils/config";
+import { CrossMarginHandler__factory } from "../../../../typechain";
+import { OwnerWrapper } from "../../wrappers/OwnerWrapper";
+import signers from "../../entities/signers";
+import { Command } from "commander";
+import { loadConfig } from "../../utils/config";
 
-const config = getConfig();
-const BigNumber = ethers.BigNumber;
-const parseUnits = ethers.utils.parseUnits;
+const orderExecutor = "0xd7BfD4F9de8016C0A28FD1AA8A3AcbA460563492";
+const isAllow = true;
 
-const orderExecutor = "0xF1235511e36f2F4D578555218c41fe1B1B5dcc1E";
-
-async function main() {
-  const deployer = (await ethers.getSigners())[0];
+async function main(chainId: number) {
+  const deployer = signers.deployer(chainId);
+  const ownerWrapper = new OwnerWrapper(chainId, deployer);
+  const config = loadConfig(chainId);
 
   console.log("> CrossMarginHandler: Set Order Executor...");
   const crossMarginHandler = CrossMarginHandler__factory.connect(config.handlers.crossMargin, deployer);
-  await (await crossMarginHandler.setOrderExecutor(orderExecutor, true)).wait();
+  await ownerWrapper.authExec(
+    crossMarginHandler.address,
+    crossMarginHandler.interface.encodeFunctionData("setOrderExecutor", [orderExecutor, isAllow])
+  );
   console.log("> CrossMarginHandler: Set Order Executor success!");
 }
-main().catch((error) => {
+
+const program = new Command();
+
+program.requiredOption("--chain-id <chainId>", "chain id", parseInt);
+
+program.parse(process.argv);
+
+const opts = program.opts();
+
+main(opts.chainId).catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });

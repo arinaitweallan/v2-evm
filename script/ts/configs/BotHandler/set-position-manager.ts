@@ -4,9 +4,10 @@ import { Command } from "commander";
 import signers from "../../entities/signers";
 import SafeWrapper from "../../wrappers/SafeWrapper";
 
-const positionManagers = ["0x6a5D2BF8ba767f7763cd342Cb62C5076f9924872"];
-
 async function main(chainId: number) {
+  const positionManagers = ["0xd7BfD4F9de8016C0A28FD1AA8A3AcbA460563492"];
+  const isAllow = true;
+
   const config = loadConfig(chainId);
   const deployer = signers.deployer(chainId);
   const safeWrapper = new SafeWrapper(chainId, config.safe, deployer);
@@ -16,7 +17,7 @@ async function main(chainId: number) {
   const tx = await safeWrapper.proposeTransaction(
     botHandler.address,
     0,
-    botHandler.interface.encodeFunctionData("setPositionManagers", [positionManagers, true])
+    botHandler.interface.encodeFunctionData("setPositionManagers", [positionManagers, isAllow])
   );
   console.log(`[configs/BotHandler] Proposed: ${tx}`);
 }

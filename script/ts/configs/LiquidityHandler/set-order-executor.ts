@@ -9,13 +9,14 @@ async function main(chainId: number) {
   const deployer = signers.deployer(chainId);
   const ownerWrapper = new OwnerWrapper(chainId, deployer);
 
-  const orderExecutor = "0xF1235511e36f2F4D578555218c41fe1B1B5dcc1E";
+  const orderExecutor = "0xd7BfD4F9de8016C0A28FD1AA8A3AcbA460563492";
+  const isAllow = true;
 
   const liquidityHandler = LiquidityHandler__factory.connect(config.handlers.liquidity, deployer);
   console.log(`[configs/LiquidityHandler] Set Order Executor`);
   await ownerWrapper.authExec(
     liquidityHandler.address,
-    liquidityHandler.interface.encodeFunctionData("setOrderExecutor", [orderExecutor, true])
+    liquidityHandler.interface.encodeFunctionData("setOrderExecutor", [orderExecutor, isAllow])
   );
   console.log("[configs/LiquidityHandler] Finished");
 }

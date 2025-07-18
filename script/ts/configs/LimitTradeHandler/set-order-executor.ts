@@ -9,13 +9,14 @@ async function main(chainId: number) {
   const deployer = signers.deployer(chainId);
   const ownerWrapper = new OwnerWrapper(chainId, deployer);
 
-  const orderExecutor = "0xF1235511e36f2F4D578555218c41fe1B1B5dcc1E";
+  const orderExecutor = "0xd7BfD4F9de8016C0A28FD1AA8A3AcbA460563492";
+  const isAllow = true;
 
   const limitTradeHandler = LimitTradeHandler__factory.connect(config.handlers.limitTrade, deployer);
   console.log(`[configs/LimitTradeHandler] Set Order Executor`);
   await ownerWrapper.authExec(
     limitTradeHandler.address,
-    limitTradeHandler.interface.encodeFunctionData("setOrderExecutor", [orderExecutor, true])
+    limitTradeHandler.interface.encodeFunctionData("setOrderExecutor", [orderExecutor, isAllow])
   );
   console.log("[configs/LimitTradeHandler] Finished");
 }

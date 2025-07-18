@@ -17,11 +17,6 @@ async function main(chainId: number) {
       maxLongPositionSize: 1_000_000,
       maxShortPositionSize: 1_000_000,
     },
-    {
-      marketIndex: 1,
-      maxLongPositionSize: 1_000_000,
-      maxShortPositionSize: 1_000_000,
-    },
     // {
     //   marketIndex: 23,
     //   maxLongPositionSize: 20_000,
