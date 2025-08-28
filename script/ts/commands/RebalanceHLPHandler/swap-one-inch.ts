@@ -15,7 +15,7 @@ async function main(chainId: number) {
   const PARAMS = {
     amountIn: "808.52",
     minAmountOut: "12300",
-    path: [config.tokens.link, config.tokens.usdc],
+    path: [config.tokens.wbtc, config.tokens.usdcNative],
   };
 
   const chainInfo = chains[chainId];
