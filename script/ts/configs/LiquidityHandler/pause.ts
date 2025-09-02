@@ -11,7 +11,7 @@ async function main(chainId: number) {
 
   const liquidityHandler = LiquidityHandler__factory.connect(config.handlers.liquidity, deployer);
   console.log(`[configs/LiquidityHandler] Pause LiquidityHandler`);
-  await ownerWrapper.authExec(liquidityHandler.address, liquidityHandler.interface.encodeFunctionData("pause", []));
+  await ownerWrapper.authExec(liquidityHandler.address, liquidityHandler.interface.encodeFunctionData("pause"));
   console.log("[configs/LiquidityHandler] LiquidityHandler paused successfully");
 }
 
