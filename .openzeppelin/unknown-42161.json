@@ -188,6 +188,11 @@
       "address": "0xD74ea358C16f0C6DDdE572924260977520976479",
       "txHash": "0x0b74417e8ebe3848974da0fb6f6db334833d73259cca403d1fec419c4683e550",
       "kind": "transparent"
+    },
+    {
+      "address": "0xcCDDEbD0ebE02EDF37FF36bD3B47BBeBC746bCf2",
+      "txHash": "0x819c01ade5c8fcd0f1679d90cae02717e6585c07c181455f3f7f6a530dd651fc",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -25292,6 +25297,146 @@
         "solcVersion": "0.8.20",
         "storage": [],
         "types": {}
+      }
+    },
+    "9c936e25b5bfd262f804e30fcbf0193d7ef3ff7604ecb2969376d3f0956c3e9e": {
+      "address": "0xB570d5616C2C0C4b1806C1DF2CE928e99cbba694",
+      "txHash": "0x78cc1b97c7aefecfec77e1738938002c955acfbc567390631ebf70769d49e2b4",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "lib/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "lib/openzeppelin-contracts-upgradeable/contracts/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "lib/openzeppelin-contracts-upgradeable/contracts/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "lib/openzeppelin-contracts-upgradeable/contracts/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "lib/openzeppelin-contracts-upgradeable/contracts/security/ReentrancyGuardUpgradeable.sol:80"
+          },
+          {
+            "label": "vaultStorage",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_contract(IVaultStorage)88641",
+            "contract": "ExternalRebalancer",
+            "src": "src/contracts/ExternalRebalancer.sol:46"
+          },
+          {
+            "label": "calculator",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_contract(ICalculator)20745",
+            "contract": "ExternalRebalancer",
+            "src": "src/contracts/ExternalRebalancer.sol:47"
+          },
+          {
+            "label": "maxAUMDropPercentage",
+            "offset": 20,
+            "slot": "152",
+            "type": "t_uint16",
+            "contract": "ExternalRebalancer",
+            "src": "src/contracts/ExternalRebalancer.sol:48"
+          },
+          {
+            "label": "whitelistedExecutors",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "ExternalRebalancer",
+            "src": "src/contracts/ExternalRebalancer.sol:49"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ICalculator)20745": {
+            "label": "contract ICalculator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IVaultStorage)88641": {
+            "label": "contract IVaultStorage",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_uint16": {
+            "label": "uint16",
+            "numberOfBytes": "2"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
       }
     }
   }
