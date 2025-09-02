@@ -96,11 +96,6 @@
       "kind": "transparent"
     },
     {
-      "address": "0x1c6b1264B022dE3c6f2AddE01D11fFC654297ba6",
-      "txHash": "0xd22465d5addeed17551df60ec48956e2cb60b1457c48923d2aaca44f286b2536",
-      "kind": "transparent"
-    },
-    {
       "address": "0x0A4536BE713989a355f77fd46FD21E737C219F5c",
       "txHash": "0xbfc886cff950b4596bc704bf7ae283817e145a3b7d489b2da4aa82f1b0b16a82",
       "kind": "transparent"
@@ -3417,11 +3412,7 @@
           },
           "t_enum(WithdrawOrderStatus)24339": {
             "label": "enum ICrossMarginHandler.WithdrawOrderStatus",
-            "members": [
-              "PENDING",
-              "SUCCESS",
-              "FAIL"
-            ],
+            "members": ["PENDING", "SUCCESS", "FAIL"],
             "numberOfBytes": "1"
           },
           "t_mapping(t_address,t_array(t_struct(WithdrawOrder)24364_storage)dyn_storage)": {
@@ -4070,11 +4061,7 @@
           },
           "t_enum(LiquidityOrderStatus)28434": {
             "label": "enum ILiquidityHandler.LiquidityOrderStatus",
-            "members": [
-              "PENDING",
-              "SUCCESS",
-              "FAIL"
-            ],
+            "members": ["PENDING", "SUCCESS", "FAIL"],
             "numberOfBytes": "1"
           },
           "t_mapping(t_address,t_array(t_struct(LiquidityOrder)28460_storage)dyn_storage)": {
@@ -4941,11 +4928,7 @@
           },
           "t_enum(LiquidityOrderStatus)36533": {
             "label": "enum ILiquidityHandler.LiquidityOrderStatus",
-            "members": [
-              "PENDING",
-              "SUCCESS",
-              "FAIL"
-            ],
+            "members": ["PENDING", "SUCCESS", "FAIL"],
             "numberOfBytes": "1"
           },
           "t_mapping(t_address,t_array(t_struct(LiquidityOrder)36559_storage)dyn_storage)": {
@@ -11008,11 +10991,7 @@
           },
           "t_enum(OrderStatus)29550": {
             "label": "enum IExt01Handler.OrderStatus",
-            "members": [
-              "PENDING",
-              "SUCCESS",
-              "FAIL"
-            ],
+            "members": ["PENDING", "SUCCESS", "FAIL"],
             "numberOfBytes": "1"
           },
           "t_mapping(t_address,t_address)": {
@@ -15675,11 +15654,7 @@
           },
           "t_enum(LiquidityOrderStatus)33909": {
             "label": "enum ILiquidityHandler.LiquidityOrderStatus",
-            "members": [
-              "PENDING",
-              "SUCCESS",
-              "FAIL"
-            ],
+            "members": ["PENDING", "SUCCESS", "FAIL"],
             "numberOfBytes": "1"
           },
           "t_mapping(t_address,t_array(t_struct(LiquidityOrder)33935_storage)dyn_storage)": {
@@ -15958,11 +15933,7 @@
           },
           "t_enum(WithdrawOrderStatus)35997": {
             "label": "enum ICrossMarginHandler.WithdrawOrderStatus",
-            "members": [
-              "PENDING",
-              "SUCCESS",
-              "FAIL"
-            ],
+            "members": ["PENDING", "SUCCESS", "FAIL"],
             "numberOfBytes": "1"
           },
           "t_mapping(t_address,t_array(t_struct(WithdrawOrder)36022_storage)dyn_storage)": {
@@ -19917,11 +19888,7 @@
           },
           "t_enum(WithdrawOrderStatus)36117": {
             "label": "enum ICrossMarginHandler.WithdrawOrderStatus",
-            "members": [
-              "PENDING",
-              "SUCCESS",
-              "FAIL"
-            ],
+            "members": ["PENDING", "SUCCESS", "FAIL"],
             "numberOfBytes": "1"
           },
           "t_mapping(t_address,t_array(t_struct(WithdrawOrder)36142_storage)dyn_storage)": {
@@ -22113,11 +22080,7 @@
           },
           "t_enum(WithdrawOrderStatus)36335": {
             "label": "enum ICrossMarginHandler.WithdrawOrderStatus",
-            "members": [
-              "PENDING",
-              "SUCCESS",
-              "FAIL"
-            ],
+            "members": ["PENDING", "SUCCESS", "FAIL"],
             "numberOfBytes": "1"
           },
           "t_mapping(t_address,t_array(t_struct(WithdrawOrder)36360_storage)dyn_storage)": {
@@ -22858,11 +22821,7 @@
           },
           "t_enum(OrderStatus)36728": {
             "label": "enum IExt01Handler.OrderStatus",
-            "members": [
-              "PENDING",
-              "SUCCESS",
-              "FAIL"
-            ],
+            "members": ["PENDING", "SUCCESS", "FAIL"],
             "numberOfBytes": "1"
           },
           "t_mapping(t_address,t_address)": {
@@ -23177,11 +23136,7 @@
           },
           "t_enum(LiquidityOrderStatus)37891": {
             "label": "enum ILiquidityHandler.LiquidityOrderStatus",
-            "members": [
-              "PENDING",
-              "SUCCESS",
-              "FAIL"
-            ],
+            "members": ["PENDING", "SUCCESS", "FAIL"],
             "numberOfBytes": "1"
           },
           "t_mapping(t_address,t_array(t_struct(LiquidityOrder)37917_storage)dyn_storage)": {
@@ -24669,7 +24624,6 @@
     },
     "476354895f67d793fb32db53e9ce7142b2eb66292340aacb55c6d365663e9a5b": {
       "address": "0xA5d747780e3c6DFaB91616165c716158A8B86A5c",
-      "txHash": "0x0fe032e36457328f1d01d7010ee70e7252997131f38b2238b1ec1fcf3ab52f3e",
       "layout": {
         "solcVersion": "0.8.18",
         "storage": [
@@ -24858,11 +24812,7 @@
           },
           "t_enum(LiquidityOrderStatus)39750": {
             "label": "enum ILiquidityHandler.LiquidityOrderStatus",
-            "members": [
-              "PENDING",
-              "SUCCESS",
-              "FAIL"
-            ],
+            "members": ["PENDING", "SUCCESS", "FAIL"],
             "numberOfBytes": "1"
           },
           "t_mapping(t_address,t_array(t_struct(LiquidityOrder)39776_storage)dyn_storage)": {
@@ -24976,7 +24926,11 @@
     },
     "9cbfff1692e6aef77a63eac2740f2944c3fe3aa32a2f9d6a82ab15e36b9db32f": {
       "address": "0xa6a508ABee3d37C3d8Ea8519B6F4549E1DC60F5b",
-      "txHash": "0x570278af15e17c00bfd5748233630531f8f4e94bd17ee14db9a1f4f11e452572",
+      "txHash": "0x570278af15e17c00bfd5748233630531f8f4e94bd17ee14db9a1f4f11e452572"
+    },
+    "dd5e08fce674793bb402139fb0d6e38008ba1a6032c87ca9ee34c449edc8dd77": {
+      "address": "0x25d169Ad69079A71705E9dFC674BEDC8bC7D3F00",
+      "txHash": "0xa33df44336cb1a57f19dc45764794a57d50c101a803b9a1aa0c61714479531a8",
       "layout": {
         "solcVersion": "0.8.18",
         "storage": [
@@ -25393,12 +25347,116 @@
             "type": "t_mapping(t_address,t_bool)",
             "contract": "ExternalRebalancer",
             "src": "src/contracts/ExternalRebalancer.sol:49"
+          },
+          {
+            "label": "liquidityService",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:93"
+          },
+          {
+            "label": "pyth",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_address",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:94"
+          },
+          {
+            "label": "nextExecutionOrderIndex",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:95"
+          },
+          {
+            "label": "minExecutionOrderFee",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_uint256",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:96"
+          },
+          {
+            "label": "maxExecutionChunk",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_uint256",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:97"
+          },
+          {
+            "label": "liquidityOrders",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_array(t_struct(LiquidityOrder)39765_storage)dyn_storage",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:99"
+          },
+          {
+            "label": "orderExecutors",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:100"
+          },
+          {
+            "label": "accountExecutedLiquidityOrders",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_mapping(t_address,t_array(t_struct(LiquidityOrder)39765_storage)dyn_storage)",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:101"
+          },
+          {
+            "label": "hlpStaking",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_contract(ISurgeStaking)80960",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:103"
+          },
+          {
+            "label": "isSurge",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:104"
+          },
+          {
+            "label": "dlp",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_address",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:105"
+          },
+          {
+            "label": "paused",
+            "offset": 20,
+            "slot": "161",
+            "type": "t_bool",
+            "contract": "LiquidityHandler",
+            "src": "src/handlers/LiquidityHandler.sol:106"
           }
         ],
         "types": {
           "t_address": {
             "label": "address",
             "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(LiquidityOrder)39765_storage)dyn_storage": {
+            "label": "struct ILiquidityHandler.LiquidityOrder[]",
+            "numberOfBytes": "32"
           },
           "t_array(t_uint256)49_storage": {
             "label": "uint256[49]",
@@ -25420,6 +25478,19 @@
             "label": "contract IVaultStorage",
             "numberOfBytes": "20"
           },
+          "t_contract(ISurgeStaking)80960": {
+            "label": "contract ISurgeStaking",
+            "numberOfBytes": "20"
+          },
+          "t_enum(LiquidityOrderStatus)39739": {
+            "label": "enum ILiquidityHandler.LiquidityOrderStatus",
+            "members": ["PENDING", "SUCCESS", "FAIL"],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_array(t_struct(LiquidityOrder)39765_storage)dyn_storage)": {
+            "label": "mapping(address => struct ILiquidityHandler.LiquidityOrder[])",
+            "numberOfBytes": "32"
+          },
           "t_mapping(t_address,t_bool)": {
             "label": "mapping(address => bool)",
             "numberOfBytes": "32"
@@ -25428,9 +25499,99 @@
             "label": "uint16",
             "numberOfBytes": "2"
           },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(LiquidityOrder)39765_storage": {
+            "label": "struct ILiquidityHandler.LiquidityOrder",
+            "members": [
+              {
+                "label": "orderId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "minOut",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "actualAmountOut",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "executionFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "account",
+                "type": "t_address_payable",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "createdTimestamp",
+                "type": "t_uint48",
+                "offset": 20,
+                "slot": "5"
+              },
+              {
+                "label": "executedTimestamp",
+                "type": "t_uint48",
+                "offset": 26,
+                "slot": "5"
+              },
+              {
+                "label": "token",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "isAdd",
+                "type": "t_bool",
+                "offset": 20,
+                "slot": "6"
+              },
+              {
+                "label": "isNativeOut",
+                "type": "t_bool",
+                "offset": 21,
+                "slot": "6"
+              },
+              {
+                "label": "status",
+                "type": "t_enum(LiquidityOrderStatus)39739",
+                "offset": 22,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          },
           "t_uint256": {
             "label": "uint256",
             "numberOfBytes": "32"
+          },
+          "t_uint48": {
+            "label": "uint48",
+            "numberOfBytes": "6"
           },
           "t_uint8": {
             "label": "uint8",

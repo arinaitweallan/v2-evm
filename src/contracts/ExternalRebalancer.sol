@@ -159,6 +159,7 @@ contract ExternalRebalancer is OwnableUpgradeable, ReentrancyGuardUpgradeable {
     IERC20Upgradeable(_replacementToken).safeTransferFrom(msg.sender, address(vaultStorage), _replacementAmount);
 
     // Add replacement tokens to HLP liquidity
+    vaultStorage.pullToken(_replacementToken);
     vaultStorage.addHLPLiquidity(_replacementToken, _replacementAmount);
 
     // Get final AUM and calculate drop percentage
